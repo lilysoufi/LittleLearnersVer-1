@@ -1,4 +1,4 @@
-.about-hero {
+.contact-hero-section {
     position: relative;
     border: 2px solid #262626;
     box-shadow: 8px 8px 0px 1px #1E1E1E;
@@ -7,9 +7,8 @@
     display: flex;
     padding: 150px 120px;
     background-color: #FFFFFF;
-    ;
     
-    & h6 {
+    & .contact-hero-title h6 {
         border: 2px solid #262626;
         border-radius: 8px;
         width :max-content;
@@ -27,7 +26,7 @@
 
     }
 
-    & h2 {
+    & .contact-hero-title h2 {
         font-family: "Raleway" ,sans-serif;
         font-weight: 700;
         font-style: Bold;
@@ -37,13 +36,13 @@
 
     }
 
-    .about-hero-icon {
+    .contact-hero-icon {
         position: absolute;
         left: 0px;
         top: 0px;
     }
    
-    & p {
+    & .contact-hero-title p {
         font-family: "Outfit" , sans-serif;
         font-weight: 500;
         font-style: Medium;
@@ -53,6 +52,25 @@
 
     }
 
+}
+.contact-img-title {
+    display: flex;
+    height: 80px;
+    border-radius: 12px;
+    border: 2px solid #262626;
+    justify-items: center;
+
+}
+.contact-img-title #contact-img {
+    
+    padding: 7px;
+    height: 35px;
+     border-radius: 12px;
+     border: 2px solid #262626
+}
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2,400px);
 }
 
 @media (max-width : 1440px) {

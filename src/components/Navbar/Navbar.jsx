@@ -26,9 +26,9 @@ function Navbar () {
                     <li><NavLink to='/'>Home</NavLink></li>
                     <li><NavLink to='/about'>About Us</NavLink></li>
                     <li><NavLink to='/academics'>Academics</NavLink></li>
-                    <li><NavLink to=''>Admissions</NavLink></li>
-                    <li><NavLink to=''>Student Life</NavLink></li>
-                    <li className='contact-btn'><NavLink href=''>Contact</NavLink></li>
+                    <li><NavLink to='/admissions'>Admissions</NavLink></li>
+                    <li><NavLink to='/studentlife'>Student Life</NavLink></li>
+                    <li className='contact-btn'><NavLink to='/contact'>Contact</NavLink></li>
                 </ul>
                 </nav>
                 <nav className='subnav'>
@@ -40,9 +40,9 @@ function Navbar () {
                     <li><NavLink to='/'>Home</NavLink></li>
                     <li><NavLink to='/about'>About Us</NavLink></li>
                     <li><NavLink to='/academics'>Academics</NavLink></li>
-                    <li><NavLink to=''>Admissions</NavLink></li>
-                    <li><NavLink to=''>Student Life</NavLink></li>
-                    <li className='contact-btn'><NavLink href=''>Contact</NavLink></li>
+                    <li><NavLink to='/admissions'>Admissions</NavLink></li>
+                    <li><NavLink to='/studentlife'>Student Life</NavLink></li>
+                    <li className='contact-btn'><NavLink to='/contact'>Contact</NavLink></li>
                   
 
                 </div>
