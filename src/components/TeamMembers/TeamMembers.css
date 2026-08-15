@@ -1,29 +1,32 @@
 .team-card-container {
     margin: 100px 162px 200px 162px;
     display: grid;
-    grid-template-columns: repeat(2 ,800px);
-    gap : 40px;
-    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
 
-
-
-@media (max-width : 1440px) {
+/* ── Desktop (≤ 1440px) ── */
+@media (max-width: 1440px) {
     .team-card-container {
-    margin: 80px 80px 150px 80px;
-    display: grid;
-    grid-template-columns: repeat(2 ,620px);
-    gap : 40px;
-    
+        margin: 80px 80px 150px 80px;
+        gap: 30px;
+    }
 }
 
-}
-
-@media (max-width : 390px) {
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
     .team-card-container {
-      margin: 150px 16px 80px 16px;
-      display: flex;
-      flex-direction: column;
-       gap : 40px;
+        grid-template-columns: 1fr;
+        margin: 60px 40px 100px 40px;
+    }
+}
+
+/* ── Mobile (≤ 480px) ── */
+@media (max-width: 480px) {
+    .team-card-container {
+        display: flex;
+        flex-direction: column;
+        margin: 60px 16px 80px 16px;
+        gap: 40px;
     }
 }

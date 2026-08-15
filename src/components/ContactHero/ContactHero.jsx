@@ -5,9 +5,9 @@ const ContactHero = ({comment, title , desc , contactData}) => {
     <div>
           <div className='contact-hero-section'>
             <img className='contact-hero-icon'src="./img/aboutHero.png"></img>
-            <div div className='contact-hero-title'>
+            <div className='contact-hero-title'>
                 <h6>{comment}</h6>
-                <h2>{title}</h2>
+                <h2 id='title'>{title}</h2>
                 </div>
                 <div>
                 <p>{desc}</p>

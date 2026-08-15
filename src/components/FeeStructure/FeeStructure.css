@@ -1,0 +1,86 @@
+.table-container {
+    border: 2px solid #262626;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    margin: 0 162px;
+    padding: 60px;
+    overflow-x: auto;
+}
+
+.header-container {
+    display: flex;
+    min-width: 600px;
+}
+
+.heading-row {
+    flex: 1;
+    min-width: 120px;
+    padding: 25px;
+    border: 2px solid #262626;
+    background-color: #FFEFE5;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.body-container {
+    display: flex;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    min-width: 600px;
+}
+
+.body-row {
+    flex: 1;
+    min-width: 120px;
+    padding: 25px;
+    border: 2px solid #262626;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+
+/* ── Desktop (≤ 1440px) ── */
+@media (max-width: 1440px) {
+    .table-container {
+        margin: 0 80px;
+        padding: 50px;
+    }
+}
+
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
+    .table-container {
+        margin: 0 40px;
+        padding: 30px;
+    }
+
+    .heading-row {
+        font-size: 15px;
+        padding: 16px;
+    }
+
+    .body-row {
+        padding: 16px;
+        font-size: 14px;
+    }
+}
+
+/* ── Mobile (≤ 480px) ── */
+@media (max-width: 480px) {
+    .table-container {
+        margin: 0 16px;
+        padding: 20px 12px;
+    }
+
+    .heading-row {
+        font-size: 13px;
+        padding: 12px 8px;
+        min-width: 90px;
+    }
+
+    .body-row {
+        font-size: 12px;
+        padding: 12px 8px;
+        min-width: 90px;
+    }
+}

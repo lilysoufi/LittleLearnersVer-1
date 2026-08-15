@@ -1,0 +1,155 @@
+
+.contact-form-container {
+    position: relative;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px 1px #1E1E1E;
+    background-color: #FFFFFF;
+    padding: 120px 100px;
+    margin: 0 166px;
+}
+
+.contact-form-container .logo-container {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-form-container .logo-container .logo {
+    width: 154px;
+    height: 74px;
+    border: 2px solid #262626;
+    border-radius: 8px;
+    padding: 20px 60px;
+    background-color: #FFDECC;
+}
+
+.form-style {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 22px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+}
+
+.form-style > *:last-child:nth-child(odd) {
+    grid-column: span 2;
+}
+
+.form-style > *:last-child:nth-child(odd) .form-input {
+    width: 100%;
+    height: 218px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-input {
+    height: 90px;
+    padding: 30px;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #FFFCFA;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.submit-button {
+    border-radius: 12px;
+    width: 100%;
+    height: 96px;
+    background-color: #FFAE80;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #ff9a5e;
+}
+
+/* ── Desktop (≤ 1440px) ── */
+@media (max-width: 1440px) {
+    .contact-form-container {
+        padding: 100px 80px;
+        margin: 0 80px;
+    }
+}
+
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
+    .contact-form-container {
+        padding: 80px 50px;
+        margin: 0 40px;
+    }
+
+    .contact-form-container .logo-container .logo {
+        width: 120px;
+        height: 60px;
+        padding: 14px 30px;
+    }
+
+    .form-style {
+        font-size: 18px;
+        gap: 16px;
+    }
+
+    .form-input {
+        height: 72px;
+        padding: 20px;
+        font-size: 17px;
+    }
+}
+
+/* ── Mobile (≤ 480px) ── */
+@media (max-width: 480px) {
+    .contact-form-container {
+        padding: 80px 20px 40px 20px;
+        margin: 40px 16px;
+    }
+
+    .contact-form-container .logo-container {
+        top: -28px;
+        gap: 10px;
+    }
+
+    .contact-form-container .logo-container .logo {
+        width: 70px;
+        height: 54px;
+        padding: 10px 16px;
+    }
+
+    .form-style {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-input {
+        height: 60px;
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    .submit-button {
+        height: 72px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+}

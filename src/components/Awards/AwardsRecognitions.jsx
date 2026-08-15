@@ -77,7 +77,7 @@ const AwardsRecognitions = () => {
   ]
 
    const cardsNumber = 3
-   const cardsLeft = 8
+   let cardsLeft = 8
    const maxLength = awardsData.length - cardsNumber ;
 
    const nextSlide = () => {

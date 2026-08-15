@@ -1,23 +1,32 @@
 .supoort-data-container {
-    padding: 50px 162px 200px 162px ;
+    padding: 50px 162px 200px 162px;
     display: flex;
     gap: 50px;
 }
 
-@media (max-width : 1440px) {
+/* ── Desktop (≤ 1440px) ── */
+@media (max-width: 1440px) {
     .supoort-data-container {
-    padding: 50px 80px 150px 80px ;
-    display: flex;
-    gap: 30px;
-}
+        padding: 50px 80px 150px 80px;
+        gap: 30px;
+    }
 }
 
-@media (max-width : 390px) {
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
     .supoort-data-container {
-    padding: 0;
-    margin: 50px 16px 80px 16px ;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
+        padding: 40px 40px 100px 40px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
 }
+
+/* ── Mobile (≤ 480px) ── */
+@media (max-width: 480px) {
+    .supoort-data-container {
+        padding: 0;
+        margin: 40px 16px 80px 16px;
+        flex-direction: column;
+        gap: 30px;
+    }
 }

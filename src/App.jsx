@@ -13,9 +13,9 @@ import {Route, Routes} from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Academics from './pages/Academics.jsx'
-import Admissions from './components/Admissions/Admissions.jsx'
 import StudentLife from './pages/StudentLife.jsx'
 import Contact from './pages/Contact.jsx'
+import Admissions from './pages/Admissions.jsx'
 
 function App() {
   const [count, setCount] = useState(0)

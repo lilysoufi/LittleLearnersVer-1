@@ -1,6 +1,6 @@
 .testimionial-slider-container{
   max-width: 800px;
-  margin: 0px 16px;
+  margin: 0px 300px;
   
   text-align: center;
 }
@@ -178,7 +178,7 @@ color: #333333;
 @media (min-width :1440px) {
    .testimionial-slider-container{
       max-width: 1250px;
-      margin: 0px 82px;
+       margin: 0px 250px;
       text-align: center;
 }   
  .card-image img {

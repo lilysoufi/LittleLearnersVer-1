@@ -3,11 +3,11 @@
     
     border: 2px solid #262626;
     box-shadow: 6px 6px 0px 2px #1E1E1E;
-    width: 773px;
+    width: auto;
     height: 588px;
-    gap: 80px;
+    /* gap: 80px; */
     border-radius: 12px;
-    padding: 80px;
+    padding: 50px;
     justify-content: center;
     align-items: center;
 

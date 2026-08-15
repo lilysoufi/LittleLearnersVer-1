@@ -1,55 +1,75 @@
 .gallery-container {
- margin-bottom: 200px;
+    margin-bottom: 150px;
 
     & .gallery-buttons {
-        margin:  0% 20%;
+        margin: 0 15%;
         justify-content: center;
 
         & button {
-             height: 54px;
-             width: max-content;
-             font-family: "Outfit" , sans-serif;
-             font-weight: 600;
-             font-style: SemiBold;
-             font-size: 20px;
-             padding: 14px;
-             margin: 0 1%;
-             background-color: #FFFFFF;
-             border: 2px solid #333333;
-             border-radius: 8px;
-
-
+            height: 54px;
+            width: max-content;
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 14px;
+            margin: 0 1%;
+            background-color: #FFFFFF;
+            border: 2px solid #333333;
+            border-radius: 8px;
         }
 
-        & :hover {
+        &:hover {
             cursor: pointer;
         }
 
         & :active {
-            background-color:  #FFEFE5;
+            background-color: #FFEFE5;
         }
     }
 }
 
-@media (max-width : 1440px) {
+/* ── Desktop (≤ 1440px) ── */
+@media (max-width: 1440px) {
     .gallery-container {
-
-
-    & .gallery-buttons {
-        margin:  0% 15%;
-
-
-
+        & .gallery-buttons {
+            margin: 0 10%;
+        }
     }
 }
+
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
+    .gallery-container {
+        margin-bottom: 80px;
+
+        & .gallery-buttons {
+            margin: 0 5%;
+
+            & button {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    }
 }
 
-@media (max-width : 390px) {
+/* ── Mobile (≤ 480px) ── */
+@media (max-width: 480px) {
     .gallery-container {
+        margin-bottom: 60px;
 
+        & .gallery-buttons {
+            margin: 0 2%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
 
-    & .gallery-buttons {
-        margin:  0% 8%;
-    }
+            & button {
+                font-size: 14px;
+                padding: 8px 10px;
+                margin: 0;
+            }
+        }
     }
 }

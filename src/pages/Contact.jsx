@@ -1,4 +1,5 @@
 import ContactHero from "../components/ContactHero/ContactHero"
+import StudentInformation from "../components/StudentInformation/StudentInformation"
 
 
 const Contact = () => {
@@ -23,6 +24,49 @@ const Contact = () => {
             info :"Office Hours - 9am - 6 pm"
         }
     ]
+
+    let contactForm = [
+      {
+        title : "Parent Name" ,
+        placeholder : "Enter Parent Name"
+      } 
+      ,
+      {
+        title : "Email Address" ,
+        placeholder : "Enter Email Address"
+      } 
+      ,
+      {
+        title : "Phone Number" ,
+        placeholder : "Enter Phone Number"
+      } 
+      ,
+      {
+        title : "Student Name" ,
+        placeholder : "Enter Student Name"
+      } 
+      ,
+      {
+        title : "Student Age" ,
+        placeholder : "Enter Student Age"
+      } 
+      ,
+      {
+        title : "Program of Intrest" ,
+        placeholder : "Select Program"
+      } 
+      ,
+      {
+        title : "Message" ,
+        placeholder : "Enter your Message"
+      } 
+      
+      
+    ]
+
+    let submitButton = {
+      name : "Submit"
+    }
   return (
     <div>
       <ContactHero 
@@ -31,6 +75,7 @@ const Contact = () => {
       desc ="We value open communication and are eager to assist you with any inquiries. Feel free to reach out to us through any of the following contact methods"
       contactData={contactData}
       />
+      <StudentInformation contactForm={contactForm} submitButton={submitButton} />
 
     </div>
   )

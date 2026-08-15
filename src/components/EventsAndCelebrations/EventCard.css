@@ -4,7 +4,7 @@
     box-shadow: 6px 6px 0px 2px #1E1E1E;
     border-radius: 12px;
     /*width: 75%;*/
-    height: 570px;
+    min-height: 500px;
     
     background-color:#FFFFFF;
     padding: 8% 6% ;
@@ -86,7 +86,7 @@
 
 @media (max-width :1440px) {
     .event-card {
-        height: 433px;
+        min-height: 433px;
 
          & .event-decoration {
           height: 69%;
